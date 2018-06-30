@@ -1,0 +1,14 @@
+{
+  "type": "service_account",
+  "project_id": "sodium-airport-208009",
+  "private_key_id": "02dfff78c58bf80e307f8b9d265a5963742adff3",
+  "private_key":
+    "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDO1LbHr1v3Mkld\nyvFIx1fQqzx9rZufwbJG7qy+rfATMC4/GnfTf0KEnAYw9ye9QHKfo4NCHlsYA/6r\n9aqk3bGnKIqYrMZR0EbFEKCivRQaxa00x9wHBN5Q8KNole8+zzhy7x6LKcA2DMxX\n4IOK0Tm9GTEIJy2Z6rb4Ay8hqxd+FTpCZfFq6T38Eg+RYDaUgFP61xwbSqcLsh85\njNF4arx/h8/6tSfU6LyI/CXZJsmfhEY99sbNDmyFs508Ay49LJFWBswxWpyMayhl\nzde3XbuN+pP90j+wNvSF6n7ZNial2SRgTsl981ItW3/xc3ubvXvspVUVFxdX35Ct\naDBL5KO/AgMBAAECggEAY1btVylVfXwMmtzfWLpN5i5ohmB875VDwCfgllDKjxzE\nCZD33oAv/atGmfwLfS1YIG6Tm40i6Xz5s7Pxuu+z5Ppm3v+U3TSw2POsg51W66jo\nEQKxHjnrYWrCwXfKChvTG/jXbbWm2Q76knaGF4V4Oue/kg/nKhb+vE4jNAON7AL+\n1j0Bpgsgn36L4+CxJ1WQZ0+3tHyE0GkfxNBbPdIfBw+LdI8+mwsFE3Frle3pNrBz\nI0XzW6ftaA1iEpeuqA13M7pNmuEC1bRzibsnO0/6VSbb/QSAruQHrbnL0JhT3le4\nLFSIiLSdx7y2zBAS8mJfG3jvdNFnHvolsSQEvo2AAQKBgQDv31q+8s0Qubce87RM\nP+18PF3IgzSk5fauK+x4re0ecR+0tshV4MR6+vgZazZ2gdLb/fMvK5VrxX1CfWez\nRbO2tFRFl3F4OJXBz2p63VpGxQa3SImsgJtma3o7nYryrQoazO/3qRGVW2VD5vlT\nrjcBZ3IwHExZ6U+YYdguzqXAAQKBgQDcvKdPPCPEfF/Gn0bx4rkeUH3OweU/w1MH\nmi2yUyttZUDku7WOOn6UT8VBB8TaYLxGHiPC0dx56DpfAaQREe+E+V/Rw6K+40mz\nFZCt/XBVooPMJofLae5gSuHqc29fm5OGTUAvHT9Pn+p8etnOpBDwBqrckxdFcZws\nBr58hPpjvwKBgQDL+WFgOHV6gIIgVtn9cOsQlwCkzjWI92ghyYYHRNb66PUuJbQL\nmttZPGqWqt2gPltA6RzPAr/H6iLO1HbHMkFU3tk+aD58HZnzOd5w5iOrREWmu48e\n2inLGR/S6+/I1q5eBeEU93bVS+e7qwBfUSjDD+VA1f9zAXvGt4UuoFjAAQKBgDxk\n1XYFY1fgG6hRbezCdpnHthQ60sl2XKJI2dXfkZM1z+KFRTBr6rQTe0nGoWKKcxjQ\nKEKmfqdQFaBm54fQG3OLc18GIuINd92qudIQ9IpJk7vokuDh09m+wz8NZFyJSXzG\naBg77VWQ0GxMhIlYNFYnzNna2NQkOHGHStjw3T0rAoGACOP/34g/1kELcbSd8rL/\nxtivwDPulAzPRMFS+GkVjLKexmBL+V1z8Y2Yewe01TQGl78s248ogZBrDQgYEyMU\nPweVpu44f0RQuJzM/Aaef6CPa9oRwtVRXkvepeS6ydh+HlkBwmG21Hdy+jvyX1nb\nIOfsRb8mSJ0H11pVEpkbid4=\n-----END PRIVATE KEY-----\n",
+  "client_email": "prizonerscup@sodium-airport-208009.iam.gserviceaccount.com",
+  "client_id": "105587750174705416421",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url":
+    "https://www.googleapis.com/robot/v1/metadata/x509/prizonerscup%40sodium-airport-208009.iam.gserviceaccount.com"
+}

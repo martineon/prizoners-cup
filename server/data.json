@@ -1,0 +1,114 @@
+{
+  "enigms": [
+    {
+      "enigm": "T",
+      "point": 300
+    },
+    {
+      "enigm": "1",
+      "point": 200
+    },
+    {
+      "enigm": "2",
+      "point": 100
+    },
+    {
+      "enigm": "3",
+      "point": 100
+    },
+    {
+      "enigm": "4",
+      "point": 100,
+      "type": "word",
+      "answers": {
+        "v1": ["Jeudi", "Jupiter"],
+        "v2": ["Vendredi", "Venus"],
+        "v3": ["Samedi", "Saturne"]
+      }
+    },
+    {
+      "enigm": "5",
+      "point": 200
+    },
+    {
+      "enigm": "6",
+      "point": 200
+    },
+    {
+      "enigm": "7",
+      "point": 300,
+      "type": "word",
+      "answers": {
+        "v3": "dragon",
+        "v2": "lion",
+        "v1": "licorne"
+      }
+    },
+    {
+      "enigm": "8",
+      "point": 100
+    },
+    {
+      "enigm": "9",
+      "point": 200,
+      "type": "word",
+      "answers": {
+        "v1": "1186",
+        "v2": "1186",
+        "v3": "1186"
+      }
+    },
+    {
+      "enigm": "10",
+      "point": 200,
+      "type": "word",
+      "answers": {
+        "v1": "R482S715M397H518",
+        "v2": "R482S715M397H518",
+        "v3": "R482S715M397H518"
+      }
+    },
+    {
+      "enigm": "10-SC",
+      "point": 200
+    },
+    {
+      "enigm": "11",
+      "point": 100
+    },
+    {
+      "enigm": "12",
+      "point": 100
+    },
+    {
+      "enigm": "13",
+      "point": 100,
+      "type": "word",
+      "answers": {
+        "v1": "complot",
+        "v2": "complot",
+        "v3": "complot"
+      }
+    },
+    {
+      "enigm": "14",
+      "point": 200,
+      "type": "word",
+      "answers": {
+        "v1": "theta-khi",
+        "v2": "theta-khi",
+        "v3": "theta-khi"
+      }
+    },
+    {
+      "enigm": "M",
+      "point": 500,
+      "type": "sequence",
+      "answers": {
+        "v1": ["E84G", "X72J", "R55W"],
+        "v2": ["E84G", "X72J", "R55W"],
+        "v3": ["E84G", "X72J", "R55W"]
+      }
+    }
+  ]
+}
