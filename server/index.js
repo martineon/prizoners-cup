@@ -36,7 +36,6 @@ const tablette = {
       "3": false,
       "4": false,
       "5": false,
-      "6": false,
       "7": false,
       "8": false,
       "9": false,
@@ -60,7 +59,6 @@ const tablette = {
       "3": false,
       "4": false,
       "5": false,
-      "6": false,
       "7": false,
       "8": false,
       "9": false,
@@ -240,6 +238,16 @@ io.on("connection", socket => {
     }
   });
 
+  socket.on("take point", data => {
+    if (data.calcul === "plus") {
+      console.log(tablette[data.tabId].score);
+      tablette[data.tabId].score = tablette[data.tabId].score + 100;
+    } else if (data.calcul === "moins") {
+      console.log(tablette[data.tabId].score);
+      tablette[data.tabId].score = tablette[data.tabId].score - 100;
+    }
+  });
+
   sendResults("/tablette1");
   sendResults("/tablette2");
 
@@ -271,7 +279,6 @@ io.on("connection", socket => {
       "3": false,
       "4": false,
       "5": false,
-      "6": false,
       "7": false,
       "8": false,
       "9": false,

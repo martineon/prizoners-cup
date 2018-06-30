@@ -2,7 +2,7 @@
   "enigms": [
     {
       "enigm": "T",
-      "point": 300
+      "point": 400
     },
     {
       "enigm": "1",
@@ -18,7 +18,7 @@
     },
     {
       "enigm": "4",
-      "point": 100,
+      "point": 200,
       "type": "word",
       "answers": {
         "v1": ["Jeudi", "Jupiter"],
@@ -28,10 +28,6 @@
     },
     {
       "enigm": "5",
-      "point": 200
-    },
-    {
-      "enigm": "6",
       "point": 200
     },
     {

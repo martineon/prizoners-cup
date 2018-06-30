@@ -32,6 +32,7 @@ const Button = styled.div`
   background: rgb(210, 210, 210);
   color: #404040;
   border-radius: 5px;
+  cursor: pointer;
 `;
 
 const socket = openSocket(window.location.hostname + ":8000");
@@ -102,6 +103,10 @@ const updateTimers2 = cb => {
   });
 };
 
+const takePoint = (tabId, calcul) => {
+  socket.emit("take point", { tabId: tabId, calcul: calcul });
+};
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -156,7 +161,19 @@ class App extends Component {
         <TabletteWrapper>
           <h1>Tablette 1</h1>
           <h3>{millisToMinutesAndSeconds(this.state.TimeLeft1)}</h3>
-          <h3>Score: {this.state.score1} pts</h3>
+          <h3>Score: {this.state.score1} pts </h3>
+          <Button
+            style={{ margin: "5px 0" }}
+            onClick={() => takePoint("/tablette1", "moins")}
+          >
+            - 100pts
+          </Button>
+          <Button
+            style={{ margin: "5px 0" }}
+            onClick={() => takePoint("/tablette1", "plus")}
+          >
+            + 100pts
+          </Button>
           <Button
             style={{ margin: "5px 0" }}
             onClick={() => start("/tablette1")}
@@ -180,11 +197,20 @@ class App extends Component {
               width: "50%"
             }}
           >
+            <ResultsWrapper
+              style={{
+                borderBottom: "1px solid black"
+              }}
+            >
+              <Enigm>Enigm</Enigm>
+              <Enigm>Status</Enigm>
+              <Enigm>Action</Enigm>
+            </ResultsWrapper>
             {_.map(this.state.results1, (value, key) => {
               return (
                 <ResultsWrapper>
                   <Enigm>Enigme {key}: </Enigm>
-                  <div>{value ? "Réussi" : "En attente"}</div>
+                  <Enigm>{value ? "Réussi" : "En attente"}</Enigm>
                   <Enigm>
                     <Button
                       onClick={() => sendAnswer(key, "/tablette1", !value)}
@@ -211,11 +237,11 @@ class App extends Component {
             />
             <Button
               onClick={() =>
-                postToSpreedsheet({
-                  Email: this.state.email1,
-                  Team: this.state.team1,
-                  Score: this.state.score1
-                })
+            postToSpreedsheet({
+            Email: this.state.email1,
+            Team: this.state.team1,
+            Score: this.state.score1
+            })
               }
             >
               Envoyer les scores
@@ -226,6 +252,18 @@ class App extends Component {
           <h1>Tablette 2</h1>
           <h3>{millisToMinutesAndSeconds(this.state.TimeLeft2)}</h3>
           <h3>Score: {this.state.score2} pts</h3>
+          <Button
+            style={{ margin: "5px 0" }}
+            onClick={() => takePoint("/tablette2", "moins")}
+          >
+            - 100pts
+          </Button>
+          <Button
+            style={{ margin: "5px 0" }}
+            onClick={() => takePoint("/tablette2", "plus")}
+          >
+            + 100pts
+          </Button>
           <Button
             style={{ margin: "5px 0" }}
             onClick={() => start("/tablette2")}
@@ -249,11 +287,20 @@ class App extends Component {
               width: "50%"
             }}
           >
+            <ResultsWrapper
+              style={{
+                borderBottom: "1px solid black"
+              }}
+            >
+              <Enigm>Enigm</Enigm>
+              <Enigm>Status</Enigm>
+              <Enigm>Action</Enigm>
+            </ResultsWrapper>
             {_.map(this.state.results2, (value, key) => {
               return (
                 <ResultsWrapper>
                   <Enigm>Enigme {key}: </Enigm>
-                  <div>{value ? "Réussi" : "En attente"}</div>
+                  <Enigm>{value ? "Réussi" : "En attente"}</Enigm>
                   <Enigm>
                     <Button
                       onClick={() => sendAnswer(key, "/tablette2", !value)}
