@@ -55,6 +55,8 @@ const restart = id => {
   socket.emit("restart", { id: id });
 };
 
+const firstPath = window.location.pathname.replace(/(\/[^\/]*).*/, "$1");
+
 const sendAnswer = (id, answer) => {
   socket.emit("answer", {
     id: id,
@@ -62,8 +64,6 @@ const sendAnswer = (id, answer) => {
     tabId: firstPath
   });
 };
-
-const firstPath = window.location.pathname.replace(/(\/[^\/]*).*/, "$1");
 
 const updateTimeLeft = cb => {
   socket.on("TimeLeft " + firstPath, data => {

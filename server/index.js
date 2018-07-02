@@ -118,7 +118,7 @@ function questionSuccess(tabId, id) {
   tablette[tabId].score = tablette[tabId].score + enigm.point;
   tablette[tabId].results[id] = true;
   io.emit("update scoring" + tabId, { score: tablette[tabId].score });
-  console.log("enigm: ", enigm);
+  // console.log("enigm: ", enigm);
   console.log(`Score ${tabId}: `, tablette[tabId].score);
 }
 
@@ -134,7 +134,7 @@ function toggleSucces(tabId, id, bool) {
 }
 
 function handleAnswer(tabId, id, answer) {
-  console.log("handle : ", id, " / ", answer);
+  console.log("handle : ", id, " / ", answer, " / tabId", tabId);
   if (tablette[tabId].results[id] === true) {
     return true;
   }
@@ -190,7 +190,7 @@ function startTimer(id) {
   stopTimer(id);
   tablette[id].timerInterval = setInterval(() => {
     tablette[id].timeLeft = tablette[id].timeLeft - timeout;
-    console.log("Time Left of " + id + " :" + tablette[id].timeLeft);
+    // console.log("Time Left of " + id + " :" + tablette[id].timeLeft);
     io.emit("update scoring " + id, { score: tablette[id].score });
     io.emit("TimeLeft " + id, {
       timeLeft: tablette[id].timeLeft,
